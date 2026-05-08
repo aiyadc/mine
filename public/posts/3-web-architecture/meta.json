@@ -1,0 +1,10 @@
+{
+  "id": 3,
+  "title": "构建可扩展的 Web 应用",
+  "category": "架构",
+  "date": "2026-04-20",
+  "readTime": "10分钟",
+  "tags": ["#架构", "#Web开发", "#可扩展性"],
+  "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600",
+  "guideText": "探讨如何设计和构建能够随业务增长而扩展的 Web 应用架构。"
+}

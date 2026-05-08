@@ -1,10 +1,29 @@
+import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import BlogCard from '../components/BlogCard';
-import { blogPosts } from '../data/mockData';
 import { Link } from 'react-router-dom';
+import { getAllPosts } from '../utils/postLoader';
 
 function Home() {
-  const latestPosts = blogPosts.slice(0, 3);
+  const [latestPosts, setLatestPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function loadPosts() {
+      const posts = await getAllPosts();
+      setLatestPosts(posts.slice(0, 3));
+      setLoading(false);
+    }
+    loadPosts();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-gray-500">加载中...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen">

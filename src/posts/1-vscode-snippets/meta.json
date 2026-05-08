@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "title": "学会这个VS Code技巧，摸鱼的时间又变多了",
+  "category": "工具",
+  "date": "2026-05-07",
+  "readTime": "8分钟",
+  "tags": ["#VSCode", "#效率工具", "#前端开发"],
+  "image": "/posts/1-vscode-snippets/images/cover.png",
+  "guideText": "安利一个个人甚至是团队提高编码效率的好东西——VS Code语法提示之用户片段。配置用户片段后，输入单词前缀时会自动匹配提示，大大提升编程效率。"
+}

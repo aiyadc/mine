@@ -14,7 +14,7 @@ function Header() {
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
-            我的博客
+            {"Eachan's Work Live"}
           </Link>
           <nav className="flex space-x-8">
             {navItems.map((item) => (
