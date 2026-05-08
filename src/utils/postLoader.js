@@ -13,7 +13,7 @@ export async function getAllPosts() {
   
   for (const dir of postDirectories) {
     try {
-      const metaResponse = await fetch(`/src/posts/${dir}/meta.json`);
+      const metaResponse = await fetch(`/posts/${dir}/meta.json`);
       const meta = await metaResponse.json();
       posts.push({
         ...meta,
@@ -31,11 +31,11 @@ export async function getAllPosts() {
 export async function getPostById(id) {
   for (const dir of postDirectories) {
     try {
-      const metaResponse = await fetch(`/src/posts/${dir}/meta.json`);
+      const metaResponse = await fetch(`/posts/${dir}/meta.json`);
       const meta = await metaResponse.json();
       
       if (meta.id === parseInt(id)) {
-        const contentResponse = await fetch(`/src/posts/${dir}/content.md`);
+        const contentResponse = await fetch(`/posts/${dir}/content.md`);
         const content = await contentResponse.text();
         
         return {
