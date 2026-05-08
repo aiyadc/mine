@@ -1,0 +1,10 @@
+{
+  "id": 7,
+  "title": "如何控制并发数量",
+  "category": "技术",
+  "date": "2026-05-08",
+  "readTime": "10分钟",
+  "tags": ["#并发控制", "#前端开发", "#JavaScript"],
+  "image": "/posts/7-concurrent-control/images/cover.png",
+  "guideText": "分享一个控制并发数量的实际案例。通过封装一个 ConsumeQueue 类，实现任务队列的限流，解决批量上传文件时请求过多导致的性能问题。"
+}

@@ -4,7 +4,8 @@ const postDirectories = [
   '3-web-architecture',
   '4-css-animation',
   '5-remote-work',
-  '6-programming-journey'
+  '6-programming-journey',
+  '7-concurrent-control'
 ];
 
 export async function getAllPosts() {
