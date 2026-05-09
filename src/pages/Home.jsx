@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
-import { ArrowRight } from 'lucide-react';
-import BlogCard from '../components/BlogCard';
-import { Link } from 'react-router-dom';
-import { getAllPosts } from '../utils/postLoader';
+import { useState, useEffect } from "react";
+import { ArrowRight } from "lucide-react";
+import BlogCard from "../components/BlogCard";
+import { Link } from "react-router-dom";
+import { getAllPosts } from "../utils/postLoader";
+import "../css/pages/home.css";
 
 function Home() {
   const [latestPosts, setLatestPosts] = useState([]);
@@ -26,29 +27,20 @@ function Home() {
   }
 
   return (
-    <div className="min-h-screen">
-      <section className="bg-blue-50 py-16">
+    <div className="min-h-screen bg-gradient-to-b from-[rgba(255,179,255,0.2)] to-[#f7f8fa]" style={{padding: 24}}>
+      <section className="bg-blue-50 py-16 cover">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            欢迎来到我的博客
-          </h1>
-          <p className="text-gray-600 mb-4">
-            分享关于编程、技术和生活的思考。探索 Web 开发、软件工程和个人成长的旅程。
-          </p>
-          <div className="flex justify-center gap-4">
-            <Link
-              to="/blog"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              阅读所有文章
-              <ArrowRight size={16} />
-            </Link>
-            <Link
-              to="/about"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-700 font-medium rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
-            >
-              了解更多
-            </Link>
+ 
+          <div className="flex justify-start absolute" style={{left: 24, bottom: 24}}>
+            <div className="w-150 h-150 sm:w-24 sm:h-24 rounded-full mr-4 bg-[url('https://shop.io.mi-img.com/app/shop/img?id=shop_6cc36130f7e7246a175add3cffb47041.jpeg')] bg-cover bg-center" style={{padding: 25}} />
+            <div className="flex flex-col items-start justify-center">
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Eachan
+              </h3>
+              <p className="text-white text-sm">
+                记录工作和生活
+              </p>
+            </div>
           </div>
         </div>
       </section>
