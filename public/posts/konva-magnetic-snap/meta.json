@@ -1,0 +1,10 @@
+{
+  "id": 10,
+  "title": "从卡顿到丝滑：Konva磁吸算法与渲染优化",
+  "category": "技术",
+  "date": "2025-06-09",
+  "readTime": "12分钟",
+  "tags": ["#Konva", "#Canvas", "#性能优化", "#几何算法"],
+  "image": "/posts/konva-magnetic-snap/images/cover.png",
+  "guideText": "分享图片故事编辑器中解决动态磁吸对齐和大量元素拖拽性能瓶颈的实战经验，包括几何启发式算法和离屏渲染+LRU缓存池优化方案。"
+}

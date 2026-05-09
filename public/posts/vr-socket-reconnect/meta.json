@@ -1,0 +1,10 @@
+{
+  "id": 9,
+  "title": "VR看房：Socket断线重连下的状态一致性实战",
+  "category": "技术",
+  "date": "2023-09-09",
+  "readTime": "15分钟",
+  "tags": ["#WebSocket", "#实时通信", "#状态同步", "#VR"],
+  "image": "/posts/vr-socket-reconnect/images/cover.png",
+  "guideText": "分享VR带看房项目中解决Socket断线重连状态一致性的实战经验，包括主动心跳、消息序列号、断线缓存和有序重放等核心技术方案。"
+}

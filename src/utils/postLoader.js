@@ -6,7 +6,10 @@ const postDirectories = [
   '5-remote-work',
   '6-programming-journey',
   '7-concurrent-control',
-  'easy-image-load'
+  'easy-image-load',
+  'vr-socket-reconnect',
+  'konva-magnetic-snap',
+  'audio-manager-streaming'
 ];
 
 export async function getAllPosts() {

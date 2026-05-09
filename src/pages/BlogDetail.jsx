@@ -56,7 +56,7 @@ function BlogDetail() {
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -106,7 +106,7 @@ function BlogDetail() {
                   const language = className?.replace('language-', '') || '';
                   return <code className={`${language ? `language-${language}` : ''} bg-gray-100 px-2 py-1 rounded text-sm font-mono text-gray-800`}>{children}</code>;
                 },
-                pre: ({children}) => <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mb-4"><code className="font-mono text-sm">{children}</code></pre>,
+                pre: ({children}) => <pre className="bg-[rgb(247,250,255)] text-white p-4 rounded-lg overflow-x-auto mb-4"><code className="font-mono text-sm">{children}</code></pre>,
                 a: ({href, children}) => <a href={href} className="text-blue-600 hover:text-blue-700 underline">{children}</a>,
                 hr: () => <hr className="border-gray-200 my-8" />,
                 img: ({src, alt}) => (
