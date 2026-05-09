@@ -9,6 +9,7 @@ function BlogCard({ post }) {
           <img
             src={post.image}
             alt={post.title}
+            loading="lazy"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
@@ -26,7 +27,7 @@ function BlogCard({ post }) {
               {post.readTime}
             </span>
           </div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600">
+          <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 truncate">
             {post.title}
           </h3>
           <p className="text-gray-600 text-sm mb-4 line-clamp-2">

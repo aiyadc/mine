@@ -110,7 +110,7 @@ function BlogDetail() {
                 a: ({href, children}) => <a href={href} className="text-blue-600 hover:text-blue-700 underline">{children}</a>,
                 hr: () => <hr className="border-gray-200 my-8" />,
                 img: ({src, alt}) => (
-                  <img src={src} alt={alt || 'Image'} className="max-w-full h-auto rounded-lg my-4 shadow-md" />
+                  <img src={src} alt={alt || 'Image'} loading='lazy' className="max-w-full h-auto rounded-lg my-4 shadow-md" />
                 )
               }}>
                 {post.content}
