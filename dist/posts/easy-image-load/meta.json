@@ -6,5 +6,5 @@
   "readTime": "8分钟",
   "tags": ["#性能优化", "#前端开发", "#图片优化"],
   "image": "/posts/easy-image-load/images/cover.png",
-  "guideText": "介绍前端图片加载优化的常用方法，包括懒加载、图片压缩、占位图和图片合并等技术，帮助提升页面加载性能和用户体验。"
+  "guideText": "图片加载优化，我带你玩"
 }

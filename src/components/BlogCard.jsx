@@ -30,7 +30,7 @@ function BlogCard({ post }) {
           <h3 title={post.title} className="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 truncate">
             {post.title}
           </h3>
-          <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+          <p title={post.excerpt} className="text-gray-600 text-sm mb-4 line-clamp-2 truncate">
             {post.excerpt}
           </p>
           <div className="flex flex-wrap gap-2">

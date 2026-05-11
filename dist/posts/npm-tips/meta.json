@@ -1,0 +1,10 @@
+{
+  "id": 13,
+  "title": "npm的两个小众使用技巧，Get",
+  "category": "架构",
+  "date": "2024-07-25",
+  "readTime": "8分钟",
+  "tags": ["#npm", "#工程化", "#效率工具", "#Node.js"],
+  "image": "/posts/npm-tips/images/cover.png",
+  "guideText": "npm使用那么多年了，居然还有人不知道这两个使用技巧..."
+}

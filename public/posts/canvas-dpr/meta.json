@@ -1,0 +1,10 @@
+{
+  "id": 12,
+  "title": "canvas画布内容模糊？why and how",
+  "category": "技术",
+  "date": "2020-09-10",
+  "readTime": "5分钟",
+  "tags": ["#Canvas", "#DPR", "#高清屏", "#Retina"],
+  "image": "/posts/canvas-dpr/images/cover.png",
+  "guideText": "为什么canvas画布中的内容变模糊了？原来是高dpr屏惹的"
+}

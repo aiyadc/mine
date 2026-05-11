@@ -1,0 +1,10 @@
+{
+  "id": 14,
+  "title": "npx底层作用是啥？你弄懂了吗",
+  "category": "工具",
+  "date": "2024-06-10",
+  "readTime": "5分钟",
+  "tags": ["#npx", "#npm", "#命令行", "#效率工具"],
+  "image": "/posts/npx-guide/images/cover.png",
+  "guideText": "面试官：说说npx底层作用是啥？"
+}

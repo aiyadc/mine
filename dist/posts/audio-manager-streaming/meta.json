@@ -6,5 +6,5 @@
   "readTime": "15分钟",
   "tags": ["#音频播放", "#流式处理", "#并发控制", "#性能优化"],
   "image": "/posts/audio-manager-streaming/images/cover.png",
-  "guideText": "分享语音合成播放功能中实现边听边请求策略的实战经验，包括时序控制、并发管理、取消机制和缓存策略等核心技术。"
+  "guideText": "长文本生成试听音频，用户等了很久，该怎么办"
 }

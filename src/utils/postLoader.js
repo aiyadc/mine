@@ -9,7 +9,10 @@ const postDirectories = [
   'easy-image-load',
   'vr-socket-reconnect',
   'konva-magnetic-snap',
-  'audio-manager-streaming'
+  'audio-manager-streaming',
+  'canvas-dpr',
+  'npm-tips',
+  'npx-guide'
 ];
 
 export async function getAllPosts() {
