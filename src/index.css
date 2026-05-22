@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skeleton-card {
+  pointer-events: none;
+}
+
+.skeleton-card .bg-blue-100,
+.skeleton-card .bg-gray-100 {
+  background-color: #e5e7eb !important;
+}
+
+.skeleton-card .text-blue-600,
+.skeleton-card .text-gray-600,
+.skeleton-card .text-gray-500,
+.skeleton-card .text-gray-900 {
+  color: #d1d5db !important;
+}
+
+.skeleton-card img {
+  background-color: #e5e7eb;
+}
