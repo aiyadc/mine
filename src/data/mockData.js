@@ -1,29 +1,27 @@
 export const categories = ["全部", "编程", "技术", "架构", "设计", "生活", "工具"];
 
 export const personalInfo = {
-  name: "张三",
-  title: "全栈开发工程师 | 技术博主 | 开源爱好者",
-  bio: "热爱技术，享受创造。致力于构建优雅的解决方案，提升用户体验，并通过博客和开源项目分享知识，帮助他人成长。",
-  skills: [
-    {
-      title: "前端开发",
-      description: "精通 React、TypeScript、Tailwind CSS 等现代前端技术栈",
-      icon: "code"
-    },
-    {
-      title: "后端开发",
-      description: "熟悉 Node.js、Express、数据库设计和 API 开发",
-      icon: "server"
-    },
-    {
-      title: "UI/UX 设计",
-      description: "注重用户体验，追求简洁优雅的界面设计",
-      icon: "palette"
-    },
-    {
-      title: "开源贡献",
-      description: "积极参与开源社区，分享知识和经验",
-      icon: "heart"
-    }
-  ]
+  name: "Eachan",
+  title: "Web前端开发工程师",
+  
+  experiences: [
+    "4年多大型互联网上市公司前端深耕经验，主导过多个产品（如AI创意工场、AI走播、案场销讲）从0到1建设和核心业务迭代，驱动部门业务增长。",
+    "精通React、Vue技术及相关生态技术，有多个跨端产品如App内嵌H5、小程序等开发经验；熟悉Nodejs，有BFF和NextJs项目全栈开发经验和个人产品。",
+    "在复杂领域有深度实践，如微前端架构、性能优化、Canvas画布、Socket通信、工程化等有过多个项目经验和成功实践。",
+    "擅长AI辅助开发和团队提效，熟悉各类AI辅助编码工具，在工作中个人AI编码率提效达60%+；参与过AI Coding大赛获2等奖；定期与团队复盘AI使用心得，记录一些踩过的坑，沉淀团队AI编码rules、提示词模版等，帮助团队提效增量30%+。"
+  ],
+  
+  skills: {
+    掌握: [
+      { category: "基础", items: ["HTML", "CSS", "JavaScript"] },
+      { category: "Vue生态", items: ["Vue", "Vuex", "Pinia", "ElementUI", "VantUI"] },
+      { category: "React生态", items: ["React", "Redux", "NextJs", "AntDesign", "Taro", "UmiJS"] },
+      { category: "全栈开发", items: ["Node.js", "NextJs", "Koa", "Express"] }
+    ],
+    熟悉: [
+      { category: "工程化", items: ["Webpack", "Vite", "Lint", "Git", "Monorepo", "Npm/Yarn/Pnpm", "TypeScript"] },
+      { category: "其他", items: ["Worker", "Socket", "Canvas(Knova/fabricJs)", "Web-Vital指标性能优化", "ES6", "Tailwind", "Sass/Less"] },
+      { category: "AI编程", items: ["Claude Code", "Cursor", "Trae", "模型使用", "用户/项目规则", "Skills搭建", "Mcp"] }
+    ]
+  }
 };
