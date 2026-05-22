@@ -4,6 +4,9 @@ import BlogCard from "../components/BlogCard";
 import { Link } from "react-router-dom";
 import { getAllPosts } from "../utils/postLoader";
 import "../css/pages/home.css";
+import PageSkeleton from "../components/PageSkeleton";
+
+
 
 function Home() {
   const [latestPosts, setLatestPosts] = useState([]);
@@ -20,9 +23,7 @@ function Home() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-gray-500">加载中...</div>
-      </div>
+      <PageSkeleton />
     );
   }
 

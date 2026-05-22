@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import BlogCard from '../components/BlogCard';
+import BlogSkeleton from '../components/BlogSkeleton';
 import { categories } from '../data/mockData';
 import { getAllPosts } from '../utils/postLoader';
 
@@ -22,11 +23,7 @@ function Blog() {
     : blogPosts.filter(post => post.category === activeCategory);
 
   if (loading) {
-    return (
-      <div className="min-h-screen py-12 flex items-center justify-center">
-        <div className="text-gray-500">加载中...</div>
-      </div>
-    );
+    return <BlogSkeleton />;
   }
 
   return (
