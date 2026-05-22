@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Calendar, Clock } from 'lucide-react';
 
-function BlogCard({ post }) {
+function BlogCard({ post, isSkeleton = false }) {
   return (
     <Link to={`/blog/${post.id}`} className="block">
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
@@ -27,7 +27,7 @@ function BlogCard({ post }) {
               {post.readTime}
             </span>
           </div>
-          <h3 title={post.title} className="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 truncate">
+          <h3 title={post.title} className={`text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 truncate ${isSkeleton ? 'text-white' : ''}`}>
             {post.title}
           </h3>
           <p title={post.excerpt} className="text-gray-600 text-sm mb-4 line-clamp-2 truncate">
