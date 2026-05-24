@@ -1,7 +1,3 @@
-# npx 使用笔记：比 npm 更香的命令执行器
-
-> npx 是 npm v5.2 之后自带的工具，刚开始我以为它只是 `npm run` 的替代品，后来才发现它解决了好几个实际痛点。这里记录一下我的理解和使用场景。
-
 ## 痛点场景：不用 npx 时有多麻烦
 
 以 ESLint 为例，如果我想在项目里用它：
@@ -59,15 +55,15 @@ npx create-react-app my-app
 
 ## **一些日常的实用场景**
 
-| **场景** | **命令示例** | **说明** |
-| --- | --- | --- |
-| 运行不同版本的工具 | `npx eslint@8 .` | 临时指定版本，不修改本地依赖 |
-| 初始化新项目 | `npx create-vite@latest` | 临时用脚手架创建项目 |
-| 执行一次性脚本 | `npx cowsay "hello"` | 用完即删，不用全局安装 |
+| **场景**    | **命令示例**                 | **说明**         |
+| --------- | ------------------------ | -------------- |
+| 运行不同版本的工具 | `npx eslint@8 .`         | 临时指定版本，不修改本地依赖 |
+| 初始化新项目    | `npx create-vite@latest` | 临时用脚手架创建项目     |
+| 执行一次性脚本   | `npx cowsay "hello"`     | 用完即删，不用全局安装    |
 
 ## **小结**
 
-- npx 的核心是两个能力：**自动查找 `node_modules/.bin` 中的命令** + **临时安装并自动清理**。
+- npx 的核心是两个能力：**自动查找** **`node_modules/.bin`** **中的命令** + **临时安装并自动清理**。
 - 适合场景：运行项目内的 CLI 工具、临时体验某个 npm 包、快速初始化项目。
 - 替代了 `npm run` + 全局安装的很多场景，让命令行更轻量。
 
@@ -75,3 +71,4 @@ npx create-react-app my-app
 
 - [npx npm package](https://www.npmjs.com/package/npx)
 - [npx npm docs](https://docs.npmjs.com/cli/v8/commands/npx)
+

@@ -1,7 +1,3 @@
-# Canvas 画布清晰度之谜
-
-> 做图片编辑器时被 Canvas 图片模糊问题折腾过好多次，后面终于搞明白了。这里记录一下原因和解决方案，方便以后查阅。
-
 ## 遇到的问题
 
 之前用 Canvas 做海报生成，明明图片很清晰，画上去就变糊了。尤其是在手机（Retina 屏）上，文字边缘发虚，看起来很难受。
@@ -45,29 +41,26 @@ ctx.scale(dpr, dpr);   // 后续继续用 CSS 像素坐标，省心
 
 ## **几个容易踩的坑**
 
-1. **多次调用 `ctx.scale`**
-    
-    如果不小心调了两次，坐标会乱。记得只初始化一次。
-    
+1. **多次调用** **`ctx.scale`**
+
+   如果不小心调了两次，坐标会乱。记得只初始化一次。
 2. **导出图片变大了**
-    
-    `canvas.toDataURL()` 导出的是实际像素尺寸（比如 600×600），会比 CSS 尺寸大。
-    
-    如果非要导出和 CSS 尺寸一致，可以临时建个小画布 `drawImage` 缩放一下。
-    
+
+   `canvas.toDataURL()` 导出的是实际像素尺寸（比如 600×600），会比 CSS 尺寸大。
+
+   如果非要导出和 CSS 尺寸一致，可以临时建个小画布 `drawImage` 缩放一下。
 3. **文字还是有点虚？**
-    
-    配合 `ctx.scale` 时，字体大小直接写 CSS 像素就行，不用再乘 DPR。
-    
-    例如：`ctx.font = '16px Arial'`，`scale` 会自动放大。
-    
+
+   配合 `ctx.scale` 时，字体大小直接写 CSS 像素就行，不用再乘 DPR。
+
+   例如：`ctx.font = '16px Arial'`，`scale` 会自动放大。
 
 ## **效果对比**
 
-| **配置** | **DPR=2 下显示** |
-| --- | --- |
-| `width=300, style=300px` | ❌ 模糊 |
-| `width=600, style=300px`（未 scale） | ✅ 清晰，但坐标要手动乘 2 |
+| **配置**                              | **DPR=2 下显示**   |
+| ----------------------------------- | --------------- |
+| `width=300, style=300px`            | ❌ 模糊            |
+| `width=600, style=300px`（未 scale）   | ✅ 清晰，但坐标要手动乘 2  |
 | `width=600, style=300px + scale(2)` | ✅ 清晰，坐标按习惯写，最舒服 |
 
 ## **总结**
@@ -84,3 +77,4 @@ Canvas 模糊就是实际像素和 CSS 尺寸不匹配导致的。解决办法�
 
 - [MDN - devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio)
 - [Konva - High-DPI](https://konvajs.org/docs/performance/High-DPI.html)
+

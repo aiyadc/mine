@@ -1,7 +1,3 @@
-# npm 不完全指南：两个让我效率翻倍的小技巧
-
-用 npm 好几年了，除了 `install` 和 `publish`，其实还有很多好用的功能。这篇文章不讲基础命令，只分享两个我在工程化中经常用到的技巧：自定义 `npm init` 和 `npm link`。
-
 ## 一、自定义 npm init：告别手写 package.json
 
 每次新建项目都要手写 `package.json`，或者从别的项目复制过来再改，很烦。其实 npm 允许我们定制 `npm init` 的行为。
@@ -110,10 +106,10 @@ npm unlink                 # 移除全局链接（可选）
 
 ## **总结**
 
-| **技巧** | **一句话作用** | **常用场景** |
-| --- | --- | --- |
-| 自定义 `npm init` | 自动化生成 `package.json` | 新项目初始化、团队规范 |
-| `npm link` | 本地调试未发布的 npm 包 | 组件库开发、公共工具验证 |
+| **技巧**         | **一句话作用**            | **常用场景**     |
+| -------------- | -------------------- | ------------ |
+| 自定义 `npm init` | 自动化生成 `package.json` | 新项目初始化、团队规范  |
+| `npm link`     | 本地调试未发布的 npm 包       | 组件库开发、公共工具验证 |
 
 这两个小技巧极大提升了我的日常开发效率。如果你也有类似的痛点，不妨试试看。
 
@@ -122,3 +118,4 @@ npm unlink                 # 移除全局链接（可选）
 - [npm init](https://docs.npmjs.com/cli/v8/commands/npm-init)
 - [npm config](https://docs.npmjs.com/cli/v8/commands/npm-config)
 - [npm link](https://docs.npmjs.com/cli/v8/commands/npm-link)
+
