@@ -1,4 +1,4 @@
-export const categories = ["全部", "编程", "技术", "架构", "设计", "生活", "工具"];
+export const categories = ["全部", "编程", "技术", "架构", "生活", "工具"];
 
 export const personalInfo = {
   name: "Eachan",
