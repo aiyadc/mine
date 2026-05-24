@@ -3,12 +3,13 @@ import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
-import { getPostById } from '../utils/postLoader';
+import { usePosts } from '../context/PostContext';
 
 function BlogDetail() {
   const { id } = useParams();
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
+  const { getPostById } = usePosts();
 
   useEffect(() => {
     async function loadPost() {
@@ -17,7 +18,7 @@ function BlogDetail() {
       setLoading(false);
     }
     loadPost();
-  }, [id]);
+  }, [id, getPostById]);
 
   if (loading) {
     return (

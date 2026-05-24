@@ -16,7 +16,7 @@ function About() {
   const experienceTags = ['企业深耕', '相对全面的技术栈', '复杂领域实践', 'AI赋能提效'];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 w-full">
       {/* Header Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         {/* Floating decorations */}
@@ -45,7 +45,7 @@ function About() {
 
       {/* Experience Timeline */}
       <section className="pb-12 px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-10">
             <Star className="text-yellow-400" size={24} />
             <h2 className="text-2xl font-bold text-gray-700">我的履历</h2>
@@ -83,7 +83,7 @@ function About() {
 
       {/* Skills Section */}
       <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-12">
             <Code className="text-purple-400" size={24} />
             <h2 className="text-2xl font-bold text-gray-700">我的技能树</h2>

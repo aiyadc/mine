@@ -1,18 +1,13 @@
 const postDirectories = [
   '1-vscode-snippets',
-  '2-react-guide',
-  '3-web-architecture',
-  '4-css-animation',
-  '5-remote-work',
-  '6-programming-journey',
   '7-concurrent-control',
-  'easy-image-load',
-  'vr-socket-reconnect',
-  'konva-magnetic-snap',
   'audio-manager-streaming',
   'canvas-dpr',
+  'easy-image-load',
+  'konva-magnetic-snap',
   'npm-tips',
-  'npx-guide'
+  'npx-guide',
+  'vr-socket-reconnect'
 ];
 
 export async function getAllPosts() {

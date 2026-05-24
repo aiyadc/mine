@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react';
 import BlogCard from '../components/BlogCard';
 import BlogSkeleton from '../components/BlogSkeleton';
 import { categories } from '../data/mockData';
-import { getAllPosts } from '../utils/postLoader';
+import { usePosts } from '../context/PostContext';
 
 function Blog() {
   const [activeCategory, setActiveCategory] = useState('全部');
   const [blogPosts, setBlogPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { getAllPosts } = usePosts();
 
   useEffect(() => {
     async function loadPosts() {
@@ -16,7 +17,7 @@ function Blog() {
       setLoading(false);
     }
     loadPosts();
-  }, []);
+  }, [getAllPosts]);
 
   const filteredPosts = activeCategory === '全部'
     ? blogPosts
